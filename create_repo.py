@@ -18,10 +18,5 @@ def create_repo(argv1, argv2):
             print("Repository is not initialized, please create a repository")
             return
 
-        repo_directory = repo_directory / "meow.txt"
-        repo_directory.touch(exist_ok=True)
-        print("meow.txt added to repository")
-        return
-
     print(f"Invalid command: {argv1} {argv2}")
     return
